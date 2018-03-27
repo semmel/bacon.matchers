@@ -119,6 +119,6 @@ if module?
   module.exports = init(Bacon)
 else
   if typeof require is "function"
-    define "bacon.matchers", ["bacon"], init
+    define ["vendor/Bacon"], init
   else
     init(this.Bacon)
